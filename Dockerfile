@@ -11,4 +11,5 @@ ADD hello_world/ $APP_DIR/hello_world
 ADD main.py $APP_DIR
 
 WORKDIR $APP_DIR
+CMD PYTHONPATH=$PYTHONPATH:/home/student/workscpace/se_hello_printer_app_demo
 CMD FLASK_APP=hello_world flask run --host=0.0.0.0
